@@ -1,0 +1,10 @@
+﻿@page
+@model BookBase.Pages.DetailModel
+@{
+    <h1>@Model.Author.Firstname @Model.Author.Lastname</h1>
+    <ul>
+        @foreach(var b in Model.Author.Books) {
+            <li>@b.Title</li>
+        }
+    </ul>
+}
